@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Payment Gateway</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="features">
+        <div class="container nav-feature">
+            <div class="navbar">
+                <h1>Gateway</h1>
+                <nav class="nav-list">
+                    <ul class="nav-list-first">
+                        <li><a href="features.html"><span class="flex-icon"><img src="../images/features.png" class="nav-icon" alt=""> Features</span></a></li>
+                        <li><a href="dashboard.html"><span class="flex-icon"><img src="../images/dashboard.png" class="nav-icon" alt=""> Dashboard</span></a></li>
+                        <li><a href="transactions.html"><span class="flex-icon"><img src="../images/transactions.png" class="nav-icon" alt=""> Transactions</span></a></li>
+                        <li><a href="settlements.html"><span class="flex-icon"><img src="../images/settlements.png" class="nav-icon" alt=""> Settlements</span></a></li>
+                        <li class="active"><a href="transfers.html"><span class="flex-icon"><img src="../images/transfers-active.png"  class="nav-icon" alt=""> Transfers</span></a></li>
+                        <li><a href="refunds.html"><span class="flex-icon"><img src="../images/refunds.png" class="nav-icon" alt=""> Refunds</span></a></li>
+                        <li><a href="disputes.html"><span class="flex-icon"><img src="../images/flag.png" class="nav-icon" alt=""> Disputes</span></a></li>
+                    </ul>
+                    <ul class="nav-list-second">
+                        <li><a href="developer.html"><span class="flex-icon"><img src="../images/code.png" class="nav-icon" alt=""> Developer</span></a></li>
+                        <li><a href="settings.html"><span class="flex-icon"><img src="../images/settings.png" class="nav-icon" alt=""> Settings</span></a></li>
+                        <li><a href="logout.html"><span class="flex-icon"><img src="../images/logout.png" class="nav-icon" alt=""> Log out</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Transfers -->
+            <div class="feature-board">
+                <div class="feature-head">
+                    <p><span class="flex-icon"><span id="get-menu"><i class="fa fa-bars"></i></span><img src="../images/transfers-dk.png" class="nav-icon" alt=""> Transfers</span></p>
+                    <div class="img-bell-name">
+                        <i class="fa fa-bell"></i>
+                        <img src="../images/macy.png" alt="">
+
+                        <div class="position-dropdown">
+                            <p>Macy Janet <i class="fas fa-angle-down" id="angle-down"></i></p>
+                            <nav>
+                                <ul class="user-nav">
+                                    <li><a href="settings.html"><i class="fa fa-gear"></i> Settings</a></li>
+                                    <li><a href="logout.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log
+                                            out</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+
+                <section class="showcase">
+                    <div class="grid">
+
+                        <div class="card chk-bal">
+                            <div class="balance-preview">
+                                <h3 style="font-weight: 600; font-size:0.9em; margin:10px 0px;">AVAILABLE BALANCE</h3>
+                                <h2 style="margin:20px 0px"><span class="prm-color"
+                                        style="font-size:1.5em; font-weight:700;">NGN 0.00</span></h2>
+                                <p style="font-size:14px; font-weight:lighter;">You can transfer and spend your money
+                                    available in balance</p>
+                            </div>
+                            <button class="btn btn-prm">Withdraw</button>
+                        </div>
+
+                        <div class="card amt-tf">
+                            <h3 style="font-weight: 600; font-size:0.9em; margin:10px 0px;">TOTAL AMOUNT TRANSFERRED
+                            </h3>
+                            <h2 style="margin:20px 0px"><span class="prm-color"
+                                    style="font-size:1.5em; font-weight:700;">NGN 0.00</span></h2>
+                            <p style="font-size:14px; font-weight:lighter;">Total amount that you have left in your
+                                balance</p>
+
+                        </div>
+
+                        <div class="card success-withdraw">
+                            <h3 style="font-weight: 600; font-size:0.9em; margin:10px 0px;">NUMBER OF SUCCESSFUL WITHDRAWALS
+                            </h3>
+                            <h2 style="margin:20px 0px"><span class="prm-color"
+                                    style="font-size:1.5em; font-weight:700;">0</span></h2>
+                            <p style="font-size:14px; font-weight:lighter;">Successful Withdrawals made</p>
+                        </div>
+                    </div>
+
+                    <div class="activity-board">
+                        <div class="card">
+                            <div class="trade-preview">
+                                <h2 style="font-size: 1.2em">Withdrawal History</h2>
+
+                            </div>
+                            <div class="show-activity">
+                                <svg width="218" height="149" viewBox="0 0 218 149" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M40 147C18.737 147 1.5 130.155 1.5 109.375C1.5 88.5953 18.737 71.75 40 71.75C40.9042 71.75 41.8011 71.7805 42.6897 71.8404C42.0723 68.4036 41.75 64.8645 41.75 61.25C41.75 28.3891 68.3891 1.75 101.25 1.75C127.484 1.75 149.753 18.7285 157.668 42.2966C159.543 42.1005 161.447 42 163.375 42C192.853 42 216.75 65.5051 216.75 94.5C216.75 122.046 195.182 144.773 167.75 146.962V147H68.8887H40ZM60.993 147H48.8049Z" fill="white"/>
+                                    <path d="M60.993 147H48.8049M40 147C18.737 147 1.5 130.155 1.5 109.375C1.5 88.5953 18.737 71.75 40 71.75C40.9042 71.75 41.8011 71.7805 42.6897 71.8404C42.0723 68.4036 41.75 64.8645 41.75 61.25C41.75 28.3891 68.3891 1.75 101.25 1.75C127.484 1.75 149.753 18.7285 157.668 42.2966C159.543 42.1005 161.447 42 163.375 42C192.853 42 216.75 65.5051 216.75 94.5C216.75 122.046 195.182 144.773 167.75 146.962V147H68.8887H40Z" stroke="#FF6B00" stroke-width="2.5" stroke-linecap="round"/>
+                                    </svg>                                    
+
+                                <p style="font-weight:500; font-size:0.85em; margin:0px;">No withdrawal history yet</p>
+                            </div>
+
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

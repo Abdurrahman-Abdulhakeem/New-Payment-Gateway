@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Payment Gateway</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="features">
+        <div class="container nav-feature">
+            <div class="navbar">
+                <h1>Gateway</h1>
+                <nav class="nav-list">
+                    <ul class="nav-list-first">
+                        <li><a href="features.html"><span class="flex-icon"><img src="../images/features.png" class="nav-icon" alt=""> Features</span></a></li>
+                        <li class="active"><a href="dashboard.html"><span class="flex-icon"><img src="../images/dashboard-active.png" class="nav-icon" alt=""> Dashboard</span></a></li>
+                        <li><a href="transactions.html"><span class="flex-icon"><img src="../images/transactions.png" class="nav-icon" alt=""> Transactions</span></a></li>
+                        <li><a href="settlements.html"><span class="flex-icon"><img src="../images/settlements.png" class="nav-icon" alt=""> Settlements</span></a></li>
+                        <li><a href="transfers.html"><span class="flex-icon"><img src="../images/transfers.png"  class="nav-icon" alt=""> Transfers</span></a></li>
+                        <li><a href="refunds.html"><span class="flex-icon"><img src="../images/refunds.png" class="nav-icon" alt=""> Refunds</span></a></li>
+                        <li><a href="disputes.html"><span class="flex-icon"><img src="../images/flag.png" class="nav-icon" alt=""> Disputes</span></a></li>
+                    </ul>
+                    <ul class="nav-list-second">
+                        <li><a href="developer.html"><span class="flex-icon"><img src="../images/code.png" class="nav-icon" alt=""> Developer</span></a></li>
+                        <li><a href="settings.html"><span class="flex-icon"><img src="../images/settings.png" class="nav-icon" alt=""> Settings</span></a></li>
+                        <li><a href="logout.html"><span class="flex-icon"><img src="../images/logout.png" class="nav-icon" alt=""> Log out</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Dashboard -->
+            <div class="feature-board">
+                <div class="feature-head">
+                    <p><span class="flex-icon"><span id="get-menu"><i class="fa fa-bars"></i></span><img src="../images/dashboard-dk.png" class="nav-icon" alt=""> Dashboard</span></p>
+                    <div class="img-bell-name">
+                        <i class="fa fa-bell"></i>
+                        <img src="../images/macy.png" alt="">
+
+                        <div class="position-dropdown">
+                            <p>Macy Janet <i class="fas fa-angle-down" id="angle-down"></i></p>
+                            <nav>
+                                <ul class="user-nav">
+                                    <li><a href="settings.html"><i class="fa fa-gear"></i> Settings</a></li>
+                                    <li><a href="logout.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log
+                                            out</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+
+                <section class="showcase">
+                    <div class="get-user">
+                        <h3>Hello, Robert 😎</h3>
+                        <p>Here's what's going on in your account today</p>
+                    </div>
+
+                    <div class="boxes">
+                        <div class="card">
+                            <p>Total Account Balance</p>
+                            <h2>₦0.00</h2>
+                            <p class="box-p">You can withdraw or transfer this
+                                funds to any bank account. </p>
+                            <span class="prm-color"><a href="#">Withdraw Balance <i
+                                        class="fa fa-arrow-up-right-from-square"></i></a></span>
+                        </div>
+                        <div class="card">
+                            <p>Total Revenue</p>
+                            <h2>₦0.00</h2>
+                            <p class="box-p">This is the total amount income you
+                                have generated on this account. </p>
+                            <span class="prm-color"><a href="#">Check Revenue history<i
+                                        class="fa fa-arrow-up-right-from-square"></i></a></span>
+                        </div>
+                        <div class="card">
+                            <p>Pending Settlements</p>
+                            <h2>₦0.00</h2>
+                            <p class="box-p">Your next settlement is on February
+                                28 2023. </p>
+                            <span class="prm-color"><a href="#">See all settlements <i
+                                        class="fa fa-arrow-up-right-from-square"></i></a></span>
+                        </div>
+                    </div>
+                    <div class="trade-view">
+                        <div class="card">
+                            <div class="trade-preview">
+                                <h2 style="font-size: 1.2em">Overview</h2>
+                                <select name="year" id="" class="year-option">
+                                    <option value="1 Year">1 Year</option>
+                                    <option value="2 Year">2 Year</option>
+                                </select>
+                            </div>
+                            <div id="myChart"></div>
+                        </div>
+                    </div>
+
+                    <div class="transaction-table">
+                        <div class="card">
+                            <div class="trade-preview">
+                                <h2 style="font-size: 1.2em">Transaction History</h2>
+                                <select name="year" id="" class="year-option">
+                                    <option value="30-days">Last 30 Days</option>
+                                    <option value="60-days">Last 60 Days</option>
+                                </select>
+                            </div>
+                            <div class="transac-table">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>ACCOUNT</th>
+                                            <th>DATE & TIME</th>
+                                            <th>AMOUNT</th>
+                                            <th>STATUS</th>
+                                            <th>ACTION</th>
+                                        </tr>
+                                    </thead>
+                                    <!-- <tbody id="">
+                                        <td>Payment from ref-#112356789_Debit</td>
+                                        <td>29-01-2023</td>
+                                        <td>₦556,000</td>
+                                        <td><span class="btn-warn">Pending</span></td>
+                                        <td>Debit</td>
+                                    <tbody>
+                                        <td>Payment from ref-#112356789_Debit</td>
+                                        <td>23-01-2023</td>
+                                        <td>₦9,800,000</td>
+                                        <td><span class="btn-success">Successful</span></td>
+                                        <td>Credit</td>
+                                    </tbody>
+                                    <tbody>
+                                        <td>Payment from ref-#112356789_Debit</td>
+                                        <td>20-01-2023</td>
+                                        <td>₦845,000</td>
+                                        <td><span class="btn-danger">Failed</span></td>
+                                        <td>Debit</td>
+                                    </tbody>
+                                    </tbody> -->
+                                </table>
+                            </div>
+
+                            <div class="show-activity">
+                                <svg width="141" height="103" viewBox="0 0 141 103" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M1.97095 52.3588V98.0501C1.97095 99.7173 3.3217 101.069 4.98795 101.069H136.012C137.678 101.069 139.029 99.7173 139.029 98.0501V52.3588L122.66 3.93294C122.246 2.70668 121.096 1.88135 119.802 1.88135H21.1975C19.9038 1.88135 18.754 2.70668 18.3396 3.93294L1.97095 52.3588Z"
+                                        stroke="#FF6B00" stroke-width="2.5" />
+                                </svg>
+
+
+                                <p style="font-weight:500; font-size:0.85em; margin:0px;">You do not have any
+                                    transactions to show.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Js Library -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.0/chart.min.js" integrity="sha512-R60W3LgKdvvfwbGbqKusRu/434Snuvr9/Flhtoq9cj1LQ9P4HFKParULqOCAisHk/J4zyaEWWjiWIMuP13vXEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
+
+
+    <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-base.min.js"></script>
+    <!-- Js file -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

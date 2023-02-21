@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Payment Gateway</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="features">
+        <div class="container nav-feature">
+            <div class="navbar">
+                <h1>Gateway</h1>
+                <nav class="nav-list">
+                    <ul class="nav-list-first">
+                        <li><a href="features.html"><span class="flex-icon"><img src="../images/features.png"
+                                        class="nav-icon" alt=""> Features</span></a></li>
+                        <li><a href="dashboard.html"><span class="flex-icon"><img src="../images/dashboard.png"
+                                        class="nav-icon" alt=""> Dashboard</span></a></li>
+                        <li><a href="transactions.html"><span class="flex-icon"><img src="../images/transactions.png"
+                                        class="nav-icon" alt=""> Transactions</span></a></li>
+                        <li><a href="settlements.html"><span class="flex-icon"><img src="../images/settlements.png"
+                                        class="nav-icon" alt=""> Settlements</span></a></li>
+                        <li><a href="transfers.html"><span class="flex-icon"><img src="../images/transfers.png"
+                                        class="nav-icon" alt=""> Transfers</span></a></li>
+                        <li><a href="refunds.html"><span class="flex-icon"><img src="../images/refunds.png"
+                                        class="nav-icon" alt=""> Refunds</span></a></li>
+                        <li><a href="disputes.html"><span class="flex-icon"><img src="../images/flag.png"
+                                        class="nav-icon" alt=""> Disputes</span></a></li>
+                    </ul>
+                    <ul class="nav-list-second">
+                        <li><a href="developer.html"><span class="flex-icon"><img src="../images/code.png"
+                                        class="nav-icon" alt=""> Developer</span></a></li>
+                        <li class="active"><a href="settings.html"><span class="flex-icon"><img
+                                        src="../images/settings-active.png" class="nav-icon" alt=""> Settings</span></a>
+                        </li>
+                        <li><a href="logout.html"><span class="flex-icon"><img src="../images/logout.png"
+                                        class="nav-icon" alt=""> Log out</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Settings -->
+            <div class="feature-board">
+                <div class="feature-head">
+                    <p><span class="flex-icon"><span id="get-menu"><i class="fa fa-bars"></i></span><img
+                                src="../images/settings-dk.png" class="nav-icon" alt=""> Settings</span></p>
+                    <div class="img-bell-name">
+                        <i class="fa fa-bell"></i>
+                        <img src="../images/macy.png" alt="">
+
+                        <div class="position-dropdown">
+                            <p>Macy Janet <i class="fas fa-angle-down" id="angle-down"></i></p>
+                            <nav>
+                                <ul class="user-nav">
+                                    <li><a href="settings.html"><i class="fa fa-gear"></i> Settings</a></li>
+                                    <li><a href="logout.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log
+                                            out</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+
+                <section class="showcase">
+                    <div class="card setting">
+                        <div class="settings-nav">
+                            <li><a href="settings.html"> Profile</a></li>
+                            <li><a href="businessInfo.html"> Business Info</a></li>
+                            <li><a href="bankAccount.html"> Bank Accounts</a></li>
+                            <li><a href="team.html" class="setting-active"> Team</a></li>
+                            <li><a href="preferences.html"> Preferences</a></li>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="transaction-table">
+                        <div class="card">
+                            <div class="trade-preview my-abs">
+                                <form action="">
+                                    <input type="text" name="q" class="transac-search"
+                                        placeholder="Search for Team member">
+                                </form>
+                                <div class="filter-plus">
+                                    <button class="year-option filter" id="getFilter2">Manage Roles
+                                    </button>
+                                    <button class="btn btn-prm" style="font-size: 14px;">Invite New Team
+                                        Members</button>
+                                </div>
+                            </div>
+                            <div class="card bank-details" id="bank-form2">
+                                <h3 style="text-align: center; font-weight:400;">Invite New Team Member</h3>
+                                <img src="../images/close.png" alt="" class="close-bank-form" id="close-bank-form2">
+                                <form action="">
+                                    <div class="add-bank">
+                                        <label for="mail">Email Address</label>
+                                        <input type="email" name="mail" id="">
+                                    </div>
+
+                                    <div class="add-bank">
+                                        <label for="role">Team Member Role</label>
+                                        <select name="roles" id="">
+                                            <option value="select" selected disabled>Select Bank</option>
+                                            <option value="active">Active</option>
+                                            <option value="in-active">Inactive</option>
+                                            <option value="in-active">Inactive</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mr-center">
+                                        <input type="submit" value="Invite" class="btn btn-prm">
+                                    </div>
+                                </form>
+                            </div>
+
+
+
+
+                            <div class="transac-table">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Full Name</th>
+                                            <th>Email address</th>
+                                            <th>Roles</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="">
+                                        <td>Macy Janet</td>
+                                        <td>Macysbakery@em...</td>
+                                        <td><span class="btn-pink">Business Owner</span></td>
+                                        <td><span class="btn-success two">Active</span>
+                                            <span class="btn-danger two mr-lt">Change Role</span>
+                                            <span class="mr-lt">Remove</span>
+                                        </td>
+                                    <tbody>
+                                        <td>Damini Ayo</td>
+                                        <td>Macysbakery@em...</td>
+                                        <td><span class="btn-blue">Developer</span></td>
+                                        <td><span class="btn-success two">Active</span>
+                                            <span class="btn-danger two mr-lt">Change Role</span>
+                                            <span class="mr-lt">Remove</span>
+                                        </td>
+                                    </tbody>
+                                    <tbody>
+                                        <td>Angela Oyinye</td>
+                                        <td>Macysbakery@em...</td>
+                                        <td><span class="btn-lemon">Customer Rep</span></td>
+                                        <td><span class="btn-success two">Active</span>
+                                            <span class="btn-danger two mr-lt">Change Role</span>
+                                            <span class="mr-lt">Remove</span>
+                                        </td>
+                                    </tbody>
+                                </table>
+
+                                <!-- <div class="card flex table2">
+                                    <p>Macy Janet</p>
+                                    <p>Macysbakery@em...</p>
+                                    <p><span class="btn-pink" >Business Owner</span>
+                                        <span class="btn-success two">Active</span>
+                                        <span class="btn-danger two">Change Role</span>
+                                            <span>Remove</span>
+                                    </p>
+                                </div> -->
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="page-number">
+                        <div class="card flex-number">
+                            <p><i class="fas next active-two fa-angle-left"></i></p>
+                            <p class="active-two">1</p>
+                            <p><i class="fas next active-two fa-angle-right"></i></p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

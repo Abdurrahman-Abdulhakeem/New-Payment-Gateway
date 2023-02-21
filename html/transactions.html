@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Payment Gateway</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="features">
+        <div class="container nav-feature">
+            <div class="navbar">
+                <h1>Gateway</h1>
+                <nav class="nav-list">
+                    <ul class="nav-list-first">
+                        <li><a href="features.html"><span class="flex-icon"><img src="../images/features.png" class="nav-icon" alt=""> Features</span></a></li>
+                        <li><a href="dashboard.html"><span class="flex-icon"><img src="../images/dashboard.png" class="nav-icon" alt=""> Dashboard</span></a></li>
+                        <li class="active"><a href="transactions.html"><span class="flex-icon"><img src="../images/transactions-active.png" class="nav-icon" alt=""> Transactions</span></a></li>
+                        <li><a href="settlements.html"><span class="flex-icon"><img src="../images/settlements.png" class="nav-icon" alt=""> Settlements</span></a></li>
+                        <li><a href="transfers.html"><span class="flex-icon"><img src="../images/transfers.png"  class="nav-icon" alt=""> Transfers</span></a></li>
+                        <li><a href="refunds.html"><span class="flex-icon"><img src="../images/refunds.png" class="nav-icon" alt=""> Refunds</span></a></li>
+                        <li><a href="disputes.html"><span class="flex-icon"><img src="../images/flag.png" class="nav-icon" alt=""> Disputes</span></a></li>
+                    </ul>
+                    <ul class="nav-list-second">
+                        <li><a href="developer.html"><span class="flex-icon"><img src="../images/code.png" class="nav-icon" alt=""> Developer</span></a></li>
+                        <li><a href="settings.html"><span class="flex-icon"><img src="../images/settings.png" class="nav-icon" alt=""> Settings</span></a></li>
+                        <li><a href="logout.html"><span class="flex-icon"><img src="../images/logout.png" class="nav-icon" alt=""> Log out</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Transactions -->
+            <div class="feature-board">
+                <div class="feature-head">
+                    <p><span class="flex-icon"><span id="get-menu"><i class="fa fa-bars"></i></span><img src="../images/transactions-dk.png" class="nav-icon" alt=""> Transaction History</span></p>
+                    <div class="img-bell-name">
+                        <i class="fa fa-bell"></i>
+                        <img src="../images/macy.png" alt="">
+
+                        <div class="position-dropdown">
+                            <p>Macy Janet <i class="fas fa-angle-down" id="angle-down"></i></p>
+                            <nav>
+                                <ul class="user-nav">
+                                    <li><a href="settings.html"><i class="fa fa-gear"></i> Settings</a></li>
+                                    <li><a href="logout.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log
+                                            out</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+
+                <section class="showcase">
+
+                    <div class="transaction-table">
+                        <div class="card">
+                            <div class="trade-preview">
+                                <form action="">
+                                    <input type="text" name="q" class="transac-search" placeholder="Search">
+                                </form>
+                                <div class="filter-plus">
+                                    <button class="year-option filter" id="getFilter">Filter <i
+                                            class="fa fa-filter"></i>
+                                    </button>
+                                    <select name="year" id="" class="year-option">
+                                        <option value="1-year">1 Year</option>
+                                        <option value="2-years">2 years</option>
+                                    </select>
+
+                                    <div class="filter-form card">
+                                        <div class="filter-set">
+                                            <label>Custom data range</label>
+                                            <!-- <input type="date" name="start-date" id="">
+                                         <input type="date" name="end-date" id=""> -->
+                                            <div class="flex">
+                                                <input type="text" name="start-date" placeholder="Start date">
+                                                <input type="text" name="end-date" placeholder="End date">
+                                            </div>
+                                        </div>
+                                        <div class="filter-set">
+                                            <label>Status</label>
+                                            <select name="status" id="">
+                                                <option value="select" selected disabled>Select</option>
+                                                <option value="pending">Pending</option>
+                                                <option value="failed">Failed</option>
+                                                <option value="success">Successful</option>
+                                            </select>
+                                        </div>
+                                        <div class="filter-set">
+                                            <label>Payment Method</label>
+                                            <select name="status" id="">
+                                                <option value="select" selected disabled>Select</option>
+                                                <option value="card">Card</option>
+                                                <option value="bank">Bank</option>
+                                                <option value="transfer">Transfer</option>
+                                            </select>
+                                        </div>
+                                        <div class="filter-set">
+                                            <label>Customer E-mail</label>
+                                            <select name="status" id="">
+                                                <option value="select" selected disabled>Select</option>
+                                                <option value="mail1">aaa@email.com</option>
+                                                <option value="mail2">aaa@gmail.com</option>
+                                                <option value="mail3">aaa@yahoo.com</option>
+                                            </select>
+                                        </div>
+                                        <div class="filter-set">
+                                            <label>Destination Account Number</label>
+                                            <select name="status" id="">
+                                                <option value="select" selected disabled>Select</option>
+                                                <option value="act-num1">0000</option>
+                                                <option value="act-num2">1111</option>
+                                                <option value="act-num3">2222</option>
+                                            </select>
+                                        </div>
+                                        <div class="filter-set">
+                                            <label>Reference/ID</label>
+                                            <select name="status" id="">
+                                                <option value="select" selected disabled>Select</option>
+                                                <option value="id-1">0000</option>
+                                                <option value="id-2">1111</option>
+                                                <option value="id-3">2222</option>
+                                            </select>
+                                        </div>
+                                        <div class="filter-set">
+                                            <label>Amount</label>
+                                            <select name="status" id="">
+                                                <option value="select" selected disabled>Select</option>
+                                                <option value="id-1">₦100,00.00</option>
+                                                <option value="id-2">₦11111.12</option>
+                                                <option value="id-3">₦12222</option>
+                                            </select>
+                                        </div>
+                                        <form action="">
+                                            <input type="submit" value="Apply Filter" class="btn btn-prm"
+                                                id="getFilter">
+                                        </form>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="transac-table">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>ACCOUNT</th>
+                                            <th>DATE & TIME</th>
+                                            <th>AMOUNT</th>
+                                            <th>STATUS</th>
+                                            <th>ACTION</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="">
+                                        <td>Payment from ref-#112356789_Debit</td>
+                                        <td>29-01-2023 <br>
+                                            18:55 PM</td>
+                                        <td>₦556,000</td>
+                                        <td><span class="btn-warn">Pending</span></td>
+                                        <td>Debit</td>
+                                    <tbody>
+                                        <td>Payment from ref-#112356789_Debit</td>
+                                        <td>29-01-2023 <br>
+                                            18:55 PM</td>
+                                        <td>₦556,000</td>
+                                        <td><span class="btn-warn">Pending</span></td>
+                                        <td>Debit</td>
+                                    </tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

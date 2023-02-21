@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Payment Gateway</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="features">
+        <div class="container nav-feature">
+            <div class="navbar">
+                <h1>Gateway</h1>
+                <nav class="nav-list">
+                    <ul class="nav-list-first">
+                        <li><a href="features.html"><span class="flex-icon"><img src="../images/features.png" class="nav-icon" alt=""> Features</span></a></li>
+                        <li><a href="dashboard.html"><span class="flex-icon"><img src="../images/dashboard.png" class="nav-icon" alt=""> Dashboard</span></a></li>
+                        <li><a href="transactions.html"><span class="flex-icon"><img src="../images/transactions.png" class="nav-icon" alt=""> Transactions</span></a></li>
+                        <li><a href="settlements.html"><span class="flex-icon"><img src="../images/settlements.png" class="nav-icon" alt=""> Settlements</span></a></li>
+                        <li><a href="transfers.html"><span class="flex-icon"><img src="../images/transfers.png"  class="nav-icon" alt=""> Transfers</span></a></li>
+                        <li><a href="refunds.html"><span class="flex-icon"><img src="../images/refunds.png" class="nav-icon" alt=""> Refunds</span></a></li>
+                        <li  class="active"><a href="disputes.html"><span class="flex-icon"><img src="../images/flag-active.png" class="nav-icon" alt=""> Disputes</span></a></li>
+                    </ul>
+                    <ul class="nav-list-second">
+                        <li><a href="developer.html"><span class="flex-icon"><img src="../images/code.png" class="nav-icon" alt=""> Developer</span></a></li>
+                        <li><a href="settings.html"><span class="flex-icon"><img src="../images/settings.png" class="nav-icon" alt=""> Settings</span></a></li>
+                        <li><a href="logout.html"><span class="flex-icon"><img src="../images/logout.png" class="nav-icon" alt=""> Log out</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Disputes -->
+            <div class="feature-board">
+                <div class="feature-head">
+                    <p><span class="flex-icon"><span id="get-menu"><i class="fa fa-bars"></i></span><img src="../images/flag-dk.png" class="nav-icon" alt=""> Disputes</span></p>
+                    <div class="img-bell-name">
+                        <i class="fa fa-bell"></i>
+                        <img src="../images/macy.png" alt="">
+
+                        <div class="position-dropdown">
+                            <p>Macy Janet <i class="fas fa-angle-down" id="angle-down"></i></p>
+                            <nav>
+                                <ul class="user-nav">
+                                    <li><a href="settings.html"><i class="fa fa-gear"></i> Settings</a></li>
+                                    <li><a href="logout.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log
+                                            out</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+
+                <section class="showcase">
+
+                    <div class="activity-board">
+                        <div class="card">
+                            <div class="trade-preview">
+                                <h2 style="font-size: 1.2em">Dispute</h2>
+                                <select name="year" id="" class="year-option">
+                                    <option value="30-days">Last 30 Days</option>
+                                    <option value="60-days">Last 60 Days</option>
+                                </select>
+
+                            </div>
+                            <div class="show-activity">
+                                <svg width="110" class="dispute-pic" height="96" viewBox="0 0 110 96" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.4"
+                                        d="M100.15 65.4771L91 56.3271C88.825 54.4521 87.55 51.6772 87.475 48.6021C87.325 45.2271 88.675 41.8522 91.15 39.3772L100.15 30.3771C107.95 22.5771 110.875 15.0772 108.4 9.15215C106 3.30215 98.575 0.0771484 87.625 0.0771484H3.62503C2.05003 0.152148 0.775024 1.42715 0.775024 3.00215V93.0022C0.775024 94.5771 2.05003 95.8521 3.62503 95.8521H87.625C98.425 95.8521 105.7 92.5521 108.175 86.6272C110.65 80.6272 107.8 73.2021 100.15 65.4771Z"
+                                        fill="#FF6B00" />
+                                </svg>
+
+                                <p style="font-weight:500; font-size:0.85em; margin:0px;">You do not have any disputes
+                                    yet</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
